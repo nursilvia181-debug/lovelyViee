@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>For my little baby</title>
+
+        <style>
+            body {
+                background-color: #ffe4ef;
+                text-align: center;
+                font-family: georgia;
+                padding-top: 100px;
+            } h1 {
+                color: #d45d8c;
+                font-size: 35px;
+            } p {
+                color: #a64d70;
+                font-size: 20px;
+            } button {
+                background-color: #e88eae;
+                color: white;
+                border: none;
+                padding: 15px 30px;
+                border-radius: 17px;
+                cursor: pointer;
+                transition: 0.3s;
+            } button:hover {
+                background-color: #d45d8c;
+                transform: scale(1.1);
+            } #surat {
+                background-color: #fff8fb;
+                border: 2px dashed #e8a0ba;
+                border-radius: 20px;
+                padding: 25px;
+                margin: 30px auto;
+                width: 75%;
+                box-shadow: 0 5px 15px #e8a0ba55;
+            } #surat h2 {
+                color: #d45d8c;
+            } #surat p {
+                line-height: 1.8;
+            } .polaroid {
+                background-color: white;
+                width: 220px;
+                padding: 12px 12px 25px;
+                margin: 35px auto;
+                box-shadow: 0 6px 15px #dba2b755;
+                transform: rotate(-3deg);
+                border-radius: 4px;
+                transition: 0.3s;
+                position: relative;
+            } .polaroid:hover {
+                transform: : rotate(0deg) scale(1.05);
+            } .kedua {
+                transform: rotate(-3deg);
+            } .kedua:hover {
+                transform: rotate(0deg) scale(1.05);
+            }.polaroid:before {
+                content: "";
+                position: absolute;
+                top: -12px;
+                left: 50%;
+                transform: translateX(-50%) rotate(-4deg);
+                width: 75px;
+                height: 22px;
+                background-color: #f5b8cc;
+                opacity: 0.8;
+            }.foto {
+                width: 100%;
+                height: 170px;
+                object-fit: cover;
+                display: block;
+            } .stiker {
+                color: #e88eae;
+                font-size: 28px;
+                display: block;
+                text-align: left;
+            } .bintang {
+                color: #e8a0ba;
+                display: block;
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>hii, cayanggna dedee!</h1>
+        <p>akuu punyaa sesuatu yang special untuk paan..</p>
+        
+        <button onclick="kejutan()">
+            CLICK HERE!
+        </button>
+        <script>
+            function kejutan() {
+                document.getElementById("surat").style.display = "block";
+            }
+            function nextpage() {
+                document.getElementById("surat").style.display = "none";
+                document.getElementById("halaman2").style.display = "block";
+            }
+            function moments() {
+                document.getElementById("halaman2").style.display = "none";
+                document.getElementById("halaman3").style.display = "block";
+            }
+
+        </script>
+        <div id="surat" style="display:none;">
+            <h2>Dear, Cayanggnaa akuu</h2>
+
+            <p>
+                Halooww cayaangg!
+                maaciiww yaww dah sempetin untuk bukaa hehee
+                aku cumaa mau bilangg samaa kamuu kalauu.. 
+                akuu besyukur bangettt bangett punaa kamuu.
+                jangann pernaa insecuree pass kamuu botak yawww,
+                sumpa, botakk ndaa bikinn gantengg naa cayangg ilangg.
+                dedee alwayss lovee u, walauu paan botoll hihii..
+            </p>
+        <button onclick="nextpage()">
+        NEXT PAGE!
+        </button>
+
+        </div>
+        <div id="halaman2" style="display: none;">
+            <h1>Reasons why i love you!</h1>
+
+            <p>01. Karena kamu selalu jadi diri kamu sendiri.</p>
+            <p>02. Karena kamu selalu berusaha.</p>
+            <p>03. Karena kamu selalu bersikap dewasa.</p>
+            <p>04. Karena kamu adalah kamu.</p>
+            <p>05. PRANKKK, cape ah ngetiknaa mumett</p>
+
+            <h2>And many more reasons</h2>
+
+        <button onclick="moments()">
+        SEE OUR MOMENTS ♡
+        </button>
+        </div>
+        
+        <div id="halaman3" style="display: none;">
+            <h1>Our little moments!</h1>
+
+            <p>little moments, big memories.</p>
+            <div class="polaroid">
+                 <span class="stiker">♡</span>
+                <img src="images/foto1.jpg" class="foto">
+                <p>My fav person!</p>
+                <span class="bintang">✦</span>
+            </div>
+            <div class="polaroid kedua">
+                <span class="stiker">♡</span>
+                <img src="foto2.jpg" class="foto">
+                <p>My happiness! ♡</p>
+                <span class="bintang">✦</span>
+            </div>
+        
+        
+    
+    </body>
+</html>
